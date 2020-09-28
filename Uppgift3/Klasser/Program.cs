@@ -12,35 +12,23 @@ namespace Klasser
         static void Main(string[] args)
         {
             // OBJEKT 1
-            Bil bil1 = new Bil();
-            bil1.Model = "BMW Z3";
-            bil1.Registreringsnummer = "Abc 123";
-            bil1.Registrerades = DateTime.Now;
-            bil1.Elbil = true;
+            Bil bil1 = new Bil("BMW", "Abc 123", DateTime.Now, true);
+            //bil1.Model = "BMW";
+            //bil1.Registreringsnummer = "Abc 123";
+            //bil1.Registrerades = DateTime.Now;
+            //bil1.Elbil = true;
 
             // OBJEKT 2
-            Bil bil2 = new Bil();
-            bil2.Model = "Volvo Z3";
-            bil2.Registreringsnummer = "AAA 111";
-            bil2.Registrerades = DateTime.Now;
-            bil2.Elbil = true;
+            Bil bil2 = new Bil("Volvo", "AAA 111", DateTime.Now, true);
 
             // OBJEKT 3
-            Bil bil3 = new Bil();
-            bil3.Model = "Honda Z3";
-            bil3.Registreringsnummer = "BBB 222";
-            bil3.Registrerades = DateTime.Now;
-            bil3.Elbil = false;
+            Bil bil3 = new Bil("Honda", "BBB 222", DateTime.Now, false);
 
             // OBJEKT 4
-            Bil bil4 = new Bil();
-            bil4.Model = "Toyota Z3";
-            bil4.Registreringsnummer = "CCC 333";
-            bil4.Registrerades = DateTime.Now;
-            bil4.Elbil = false;
+            Bil bil4 = new Bil("Toyota", "CCC 333", DateTime.Now, false);
 
             //ARRAY
-            string[] modeller = new string[4] {"BMW Z3", "Volvo Z3", "Honda Z3", "Toyota Z3" };
+            string[] modeller = new string[4] {"BMW", "Volvo", "Honda", "Toyota" };
             string[] allaRegistreringsnummer = new string[4] {"Abc 123", "AAA 111", "BBB 222", "CCC 333" };
             DateTime[] narRegistrerades = new DateTime[4] {DateTime.Now, DateTime.Now, DateTime.Now, DateTime.Now };
             bool[] elbilar = new bool[4] {true, true, false, false};
@@ -63,6 +51,19 @@ namespace Klasser
                 
                 i++; 
             }
+
+            Console.WriteLine();
+
+            Bil milen = new Bil();
+            milen.milmatare = 1000;    
+            Console.WriteLine("Bilens mil är " + milen.Stracka().ToString());
+
+            Console.WriteLine( );
+
+            Bil forstaRegistrering = new Bil();
+            Console.WriteLine("Första gången bilen registrerades var den " + forstaRegistrering.Registrerades);
+
+
 
             Console.ReadLine(); 
         }

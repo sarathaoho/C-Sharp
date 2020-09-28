@@ -6,32 +6,70 @@ namespace Klasser
 {
     public class Bil
     {
-        public string Registreringsnummer { get; set; }
+        // FIELDS
+        public string _modellNamn;
 
-        public bool Elbil { get; set; }
+        public string _model;
+        public string _registreringsnummer;
+        public DateTime _registrerades;
+        public bool _elbil; 
+        
+        private double _milmatare;
 
-        public DateTime Registrerades { get; set; }
+        // CONSTRUCTOR till 4 bil objekten
+        public Bil(string model, string registreringsnummer, DateTime registrerades, bool elbil)
+        {
+            _model = model;
+            _registreringsnummer = registreringsnummer;
+            _registrerades = registrerades;
+            _elbil = elbil;
+        }
 
-        public int Vikt { get; set; }
-
-        public string Model { get; set; }
-
-
-
-
+        public Bil(string modellNamn) // Konstruktur till fält _modellnamn
+        {
+            _modellNamn = modellNamn; 
+        }
 
         public Bil()
         {
-            
-            Registreringsnummer = "Abc 123";
-            Elbil = true;
-            Registrerades = DateTime.Now;
-            Vikt = 100; 
-            Model = "BMW Z3"; 
-
+                
         }
+
+        public double milmatare // PROP (--> privat fält milmätare)
+        {
+            get
+            {
+                return _milmatare; 
+            }
+            set
+            {
+                _milmatare = value; 
+            }
+        }
+
+        public double Stracka () 
+        {
+            _milmatare++; 
+            return _milmatare; 
+        }
+        
+
+        // PROPERTIES   
+        public string Registreringsnummer { get; set; }
+
+        public bool Elbil { get; set; } = true; // Något som säger huruvida bilen är en elbil eller inte?
+
+        public DateTime Registrerades // Datum för när bilen registrerades första gången?
+        {
+            get
+            {
+                return DateTime.Now;
+            }
+        } 
+
+        public int Vikt { get; set; } = int.MaxValue; // Vikt i hela kilon?
+
+        public string Model { get; set; }
+
     }
-
-
-
 }
