@@ -25,7 +25,7 @@ namespace Klasser
             _elbil = elbil;
         }
 
-        public Bil(string modellNamn) // Konstruktur till fält _modellnamn
+        public Bil(string modellNamn) // Konstruktor till fält _modellnamn
         {
             _modellNamn = modellNamn; 
         }
@@ -51,6 +51,15 @@ namespace Klasser
         {
             _milmatare++; 
             return _milmatare; 
+        }
+
+        // från genomgång av uppg
+        public decimal KorMil()
+        {
+            if (mil > 0)
+            {
+                _milmatare += mil; 
+            }
         }
         
 
