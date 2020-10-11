@@ -56,7 +56,7 @@ namespace Klasser
         {
             Console.WriteLine("Hur många mil har bilen gått?");
             int milmatare = int.Parse(Console.ReadLine());
-            Console.WriteLine(milmatare + " mil");
+            Console.WriteLine("Bilen har gått " + milmatare + " mil");
         }
     }
 
@@ -66,7 +66,7 @@ namespace Klasser
         {
             Console.WriteLine("Vad motorcykelns maxfart?");
             int maxfart = int.Parse(Console.ReadLine());
-            Console.WriteLine(maxfart + " km/h");
+            Console.WriteLine("Motorcykelns maxfart är " + maxfart + " km/h");
         }
     }
 
@@ -76,7 +76,7 @@ namespace Klasser
         {
             Console.WriteLine("Hur många passagerare kan bussen ha?");
             int passagerare = int.Parse(Console.ReadLine());
-            Console.WriteLine(passagerare + " passagerare");
+            Console.WriteLine("Bussen kan ha " + passagerare + " passagerare");
         }
     }
  
@@ -86,7 +86,7 @@ namespace Klasser
         {
             Console.WriteLine("Vad är lastbilens maxlast?");
             int maxlast = int.Parse(Console.ReadLine());
-            Console.WriteLine(maxlast + " kg");
+            Console.WriteLine("Lastbilens maxlast är " + maxlast + " kg");
         }
     }
 }
