@@ -18,13 +18,16 @@ Om klar: Testa liknande funktionalitet med en Dictionary för eleverna i varje k
 
 List och nån array
 
-1. Skapa ett program där användaren får upp ett antal frågor där den får ange uppgifter om sitt favorithusdjur, Namn, typ (hund, katt osv) födelsedatum, smeknamn, favoritmänniska. Spara värdena i en List<string>. Fråga sedan användaren huruvida angivna uppgifter stämmer och skriv återigen ut de på skärmen.
+1. Skapa ett program där användaren får upp ett antal frågor där den får ange uppgifter om sitt favorithusdjur, Namn, typ (hund, katt osv) födelsedatum, smeknamn, favoritmänniska. 
+Spara värdena i en List<string>. Fråga sedan användaren huruvida angivna uppgifter stämmer och skriv återigen ut de på skärmen.
 
-2. Deklarera en array med plats för 7 heltal. Be användare att ange sju värde som du lagrar i arrayen. Loopa över arrayen och byt alla udda tal mot talet 0. Skriv ut innehållet i arrayen på skärmen.
+2. Deklarera en array med plats för 7 heltal. Be användare att ange sju värde som du lagrar i arrayen. 
+Loopa över arrayen och byt alla udda tal mot talet 0. Skriv ut innehållet i arrayen på skärmen.
 
 2.b Beräkna median och medelvärde för arrayen och skriv ut de också.
 
-3. Skapa ett program där användaren ombeds ange 6 heltal efter varandra. Lagra talen i en List. Iterera över listan för att ta ut det högsta talet. Skriv ut det högsta talet på skärmen tillbaka till användaren.
+3. Skapa ett program där användaren ombeds ange 6 heltal efter varandra. 
+Lagra talen i en List. Iterera över listan för att ta ut det högsta talet. Skriv ut det högsta talet på skärmen tillbaka till användaren.
 
 5. Skapa en lista innehållandes maratontider. Användaren ska kunna ange hur många tider hen vill. Användaren ombeds skriva ‘klar’ för få sluta ange tider. Tiderna anges i decimaltal. Skriv ut alla tider och avsluta med att ange en den bästa tiden (lägst), den sämsta samt medeltiden.
 

@@ -21,10 +21,10 @@ DEL 1
 DEL 2
 
 1. Gör samtliga fält i Person-klassen private. (Kommentera ut om du störs av editorn)
-2. Lägg till en metod i Person-klassen som heter GetInfo(). Metoden ska behöver inte retunera någonting men den ska skriva ut all fakta du hittills samlat om personen. 
+---2. Lägg till en metod i Person-klassen som heter GetInfo(). Metoden ska behöver inte retunera någonting men den ska skriva ut all fakta du hittills samlat om personen. 
 3. Lägg till en metod i Person-klassen som heter som heter GetAge(). Metoden ska returnera en värdet på en persons ålder (inte skriva ut direkt i konsol-applikationen).
 4. Lägg till en fråga i programmet som lyder "Vill du veta personens ålder?", om användaren skriver j, använd GetAge() metoden och skriv ut värdet i konsolen.
-5. Om du inte redan gjort det. Ändra den sista delen av konsol-applikation till att använda GetInfo().
+---5. Om du inte redan gjort det. Ändra den sista delen av konsol-applikation till att använda GetInfo().
 
 DEL 3
 
